@@ -1,0 +1,39 @@
+.career-form {
+    background-color: var(--primary-nav);
+    border-radius: 5px;
+    padding: 0 16px;
+    width: 650px;
+}
+
+.career-form .form-control {
+    border: 0;
+    padding: 12px 15px;
+}
+
+
+
+
+.filter-result .job-box {
+    box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    border-radius: 10px;
+    padding: 10px 35px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.list-disk li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.list-disk li:last-child {
+    margin-bottom: 0;
+}
+
+
+.mb-30 {
+    margin-bottom: 30px;
+}

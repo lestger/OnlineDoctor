@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Amazing Grotesk Light";
+    src: url("Amazing_Grotesk_Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    --primary: white;
+    --secondary: #36393f;
+    --primary-nav: rgb(56, 182, 255);
+    --secondary-nav: rgb(32, 34, 37);
+    --primary-label: #ffffff;
+    --secondary-label: #36393f;
+    --message-primary: #3390EC;
+    --message-secondary: #6d77be;
+    --input-primary: #ffffff;
+    --input-secondary: #2b2b2d;
+    --primary-text: black;
+    --secondary-text: white;
+    --primary-button: transpanent;
+    --secondary-button: #3a3e44;
+
+}
+.user-label {
+    background: var(--primary-label);
+    color: var(--primary-text);
+    transition:0.4s ease-in-out;
+}
+.user-label svg,button,span,tr{
+    color: var(--primary-text);
+
+}
+.user-label .users-list-wrapper {
+    background: var(--primary-button);
+
+}
+.user-label input {
+    background: var(--input-primary);
+}
+
+
+
+.nightMode {
+  --primary: #36393f;
+  --primary-nav: rgb(32, 34, 37);
+  --primary-label:#36393f;
+  --message-primary: #6d77be;
+  --input-primary: #2b2b2d;
+  --primary-text: white;
+  --primary-button:#3a3e44;
+
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*--------Animation----------*/
+.fadeIn {
+    transition: opacity 2s ease-in;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+
+.bttn {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #425465;
+    color: white;
+
+}
+
+.bttn:hover {background-color: #45a049;}
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+.submitInput[type="text"], .submitInput[type="email"], .submitInput[type="password"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+
+}
+
+/* Style the submit button with a specific background color etc */
+.submitInput [type=submit] {
+    background-color: #425465;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+
+}
+
+
+/*-----------------------------Login Page-----------------------------------------*/
+.box {
+    background: var(--primary)
+}
+
+.login-container {
+
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    top: 60px;
+    bottom: 200px;
+    width: 400px;
+    height: 650px;
+    padding: 50px 40px 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reg-box {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+
+    width: 500px;
+    height: 800px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+#options_div {
+    display: none;
+}
+
+/*#err{*/
+/*  margin: 10px 0 10px 0;*/
+/*}*/
+.reg-btn {
+
+    background-color: rgb(84, 191, 31);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    /*  color:  #FFFFFF;
+    */
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.log-btn {
+    background-color: #425465;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    color: #FFFFFF;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.reg-btn:hover {
+    transition-duration: 200ms;
+    background-color: rgb(191, 31, 31);
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: #FFFFFF;
+}
+
+.log-btn:hover {
+    transition-duration: 200ms;
+    background-color: #45a049;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: #FFFFFF;
+}
+
+
+.profile-div {
+    border-radius: 5px;
+
+    padding: 15px 15px 15px 30px;
+    margin: 15px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+/*------------------------------Style of Services--------------------*/
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.online, .offline {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    content: '';
+}
+
+.online {
+    background: #84ff50;
+}
+
+.offline {
+    background: red;
+}
+
+.chat-online {
+border-radius: 10px;
+    position: absolute;
+    left: 28px;
+    top:30px;
+    width: 10px;
+    height: 10px;
+    background-color: #34ce57
+}

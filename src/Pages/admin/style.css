@@ -1,0 +1,4 @@
+ .list-user:hover{
+     cursor: pointer;
+    background-color: var(--message-primary);
+}
