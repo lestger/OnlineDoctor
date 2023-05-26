@@ -1,12 +1,18 @@
 # Realtime chat App on React
 ---this app based on React + Firebase---<br/>
-<b>Features:</b><br/>
+### Features:
 <h6>-Admin Panel with CRUD operations<br/>
 -create conversations<br/>
 -File sending on conversation<br/>
 -view available doctors<br/>
 -Raiting doctors<br/>
 -Night mode</h6>
+
+### Used Libs:
+-react-router-dom<br/>
+-firebase<br/>
+-bootstrap<br/>
+-heroicons/react<br/>
 
 ## Available Scripts
 
