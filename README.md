@@ -1,11 +1,11 @@
 # Realtime chat App on React
-features:
--Admin Panel with CRUD operations
--create conversations
--File sending on conversation
--view available doctors
--Raiting doctors
--Night mode
+Features:<br/>
+<h5>-Admin Panel with CRUD operations<br/>
+-create conversations<br/>
+-File sending on conversation<br/>
+-view available doctors<br/>
+-Raiting doctors<br/>
+-Night mode<br/></h5>
 
 ## Available Scripts
 
