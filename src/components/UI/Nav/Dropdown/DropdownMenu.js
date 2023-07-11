@@ -1,10 +1,10 @@
-import React, {createContext, useContext, useRef, useState} from 'react';
+import React, {useContext, useRef} from 'react';
 import {Link} from "react-router-dom";
 import './style.css'
 import Switch from "../../Switch/Switch";
 import {useDetectOutsideClick} from "../../../../hooks/useDetectOutsudeClick";
-import {Theme} from "../../../../App";
 import {ThemeContext} from "../../../context/ThemeContext";
+import {LogOut} from "../../../Logout";
 
 const DropdownMenu = ({user}) => {
     const el=useRef(null);
@@ -20,12 +20,13 @@ const DropdownMenu = ({user}) => {
     return (
         <div ref={el}>
             <button className={'user-button'} onClick={()=>{setActive(!active)}}>
-                <img className={"rounded-circle logo"} src={user.photoUrl}/>
+                <img className={"rounded-circle logo"} src={user.photoUrl} alt={''}/>
                 <span className={`${active?'active':'inactive'}`}><svg
                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                  stroke="white"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
                       </svg>
                 </span>
+
             </button>
             <div className={`menu user-label ${active?'active':'inactive'}`}>
                 {user.admin ?
@@ -65,7 +66,7 @@ const DropdownMenu = ({user}) => {
 
 
                 </li>
-                <li className={`menu-item`}>
+                <li className={`menu-item`} onClick = {LogOut}>
                     <div className=" my-1 btn  ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                              stroke="currentColor" className="w-6 h-6">

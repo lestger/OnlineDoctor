@@ -202,6 +202,9 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: #FFFFFF;
 }
+input{
+    color:var(--primary-text);
+}
 
 
 .profile-div {

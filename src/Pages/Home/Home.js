@@ -11,9 +11,9 @@ const Home = () => {
             <div className={"home-background"}>
                 <Navbar/>
 
-                <div style={{margin: "100px 0 0 100px "}}>
+                <div className={'d-flex flex-column p-xl-5 my-5'}>
                     <h2 className="title">YOUR HEALTH, <br/></h2>
-                    <h2 className="title" style={{marginRight: "20px"}}>OUR PRIORITY</h2>
+                    <h2 className="title" >OUR PRIORITY</h2>
                     <br/><br/><hr className="my-4"/>
                     <div className="jumbotron">
                         <h1 className="display-4">OnlineDoctor</h1>

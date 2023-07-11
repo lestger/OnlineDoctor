@@ -6,12 +6,7 @@ import {deleteObject} from "firebase/storage"
 import {storage,db,doc,auth} from "../FirebaseAPI/Firebase";
 import {ref,getDownloadURL,uploadBytes,updateDoc} from "../FirebaseAPI/Firebase"
 
-const Profile = ({match}) => {
-
-    const { parameter: uid } = match;
-
-
-
+const Profile = () => {
   const [user,setUser]=useState('');
     const [img,setImg]=useState('');
 
@@ -31,7 +26,8 @@ const Profile = ({match}) => {
                 setImg('');
 
                 try{
-if(user.photoPath){await deleteObject(ref(storage, user.photoPath));}
+if(user.photoPath){
+    await deleteObject(ref(storage, user.photoPath));}
                     const snap =await uploadBytes(imgRef,img);
                     const url=await  getDownloadURL(ref(storage,snap.ref.fullPath));
                     await updateDoc(doc(db,'users',auth.currentUser.uid),{

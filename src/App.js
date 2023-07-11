@@ -1,18 +1,16 @@
-import {BrowserRouter, Routes,  Route, Navigate} from 'react-router-dom'
+import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import Home from './Pages/Home/Home';
 import Register from "./Pages/registration/Register";
 import Login from "./Pages/Login";
 import Chat from "./Pages/chat/Chat";
 import Profile from "./Pages/Profile";
 import Services from "./Pages/services/Services";
-import AuthProvider, {AuthContext} from "./components/context/auth";
+import AuthProvider from "./components/context/auth";
 import PrivateRoutes from "./PrivateRoutes";
-import React, {createContext, useContext, useEffect, useState} from "react";
+import React, {useState} from "react";
 import Admin from "./Pages/admin/admin";
 import ContactUs from "./Pages/ContactUs";
 import {LogOut} from "./components/Logout";
-import DropdownMenu from "./components/UI/Nav/Dropdown/DropdownMenu";
-import Navbar from "./components/UI/Nav/Navbar";
 import {ThemeContext} from "./components/context/ThemeContext";
 
 function App() {
